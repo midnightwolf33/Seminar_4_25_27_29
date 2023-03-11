@@ -4,21 +4,21 @@
 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16*/
 
-Console.WriteLine("введите число A");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("введите число B");
-int b = Convert.ToInt32(Console.ReadLine());
-int stepen = a;
-int stepen1 = Auto ();
-int Auto()
-{
-for (int i = 1; i < b; i++)
-{
-stepen = stepen * a;
-}
-return stepen;
-}
-Console.WriteLine($"{a} в степени {b} равно: " + stepen1);
+// Console.WriteLine("введите число A");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("введите число B");
+// int b = Convert.ToInt32(Console.ReadLine());
+// int stepen = a;
+// int stepen1 = Auto ();
+// int Auto()
+// {
+// for (int i = 1; i < b; i++)
+// {
+// stepen = stepen * a;
+// }
+// return stepen;
+// }
+// Console.WriteLine($"{a} в степени {b} равно: " + stepen1);
 
 
 // Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
@@ -26,33 +26,33 @@ Console.WriteLine($"{a} в степени {b} равно: " + stepen1);
 // 82 -> 10
 // // 9012 -> 12
 
-int getUserData(string message)
-{
-    Console.WriteLine(message);
-    Console.ResetColor();
-    int UserData = int.Parse(Console.ReadLine()!);
-    return UserData;
-}
+// int getUserData(string message)
+// {
+//     Console.WriteLine(message);
+//     Console.ResetColor();
+//     int UserData = int.Parse(Console.ReadLine()!);
+//     return UserData;
+// }
 
-int getNumberSum(int number)
-{
-    int NumberSum = 0;
-    while (number > 0)
-    {
-        NumberSum = NumberSum + number % 10;
-        number =  number / 10;
-    }
-    return NumberSum;
-}
-void showData(string messageStart, int data)
-{
-    Console.Write(messageStart);
-    Console.Write(data);
-    Console.ResetColor();
-}
-int number = getUserData ("Введите число");
-int NumberSum = getNumberSum(number);
-showData($"Сумма цифр в числе {number} = ", NumberSum);
+// int getNumberSum(int number)
+// {
+//     int NumberSum = 0;
+//     while (number > 0)
+//     {
+//         NumberSum = NumberSum + number % 10;
+//         number =  number / 10;
+//     }
+//     return NumberSum;
+// }
+// void showData(string messageStart, int data)
+// {
+//     Console.Write(messageStart);
+//     Console.Write(data);
+//     Console.ResetColor();
+// }
+// int number = getUserData ("Введите число");
+// int NumberSum = getNumberSum(number);
+// showData($"Сумма цифр в числе {number} = ", NumberSum);
 
 
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
